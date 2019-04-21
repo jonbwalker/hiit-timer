@@ -41,27 +41,27 @@
 
     .title {
         text-align: left;
-        padding-left: 16;
+        padding-left: 16px;
     }
 
     .message {
         vertical-align: center;
         text-align: center;
-        font-size: 20;
+        font-size: 20px;
         color: #333333;
     }
 
     .drawer-header {
-        padding: 50 16 16 16;
-        margin-bottom: 16;
+        padding: 50px 16px 16px 16px;
+        margin-bottom: 16px;
         background-color: #53ba82;
         color: #ffffff;
-        font-size: 24;
+        font-size: 24px;
     }
 
     .drawer-item {
-        padding: 8 16;
+        padding: 8px 16px;
         color: #333333;
-        font-size: 16;
+        font-size: 16px;
     }
 </style>
