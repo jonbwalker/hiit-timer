@@ -17,15 +17,17 @@
             </StackLayout>
 
             <GridLayout ~mainContent columns="*" rows="*">
-                <Label class="message" :text="msg" col="0" row="0"/>
+                <TimeSelector />
             </GridLayout>
         </RadSideDrawer>
     </Page>
 </template>
 
 <script lang="ts">
+  import TimeSelector from './TimeSelector/TimeSelector.vue'
   import { Component, Vue } from "vue-property-decorator";
-  @Component
+
+  @Component({components: {TimeSelector}})
   export default class App extends Vue {
     msg: string = 'Hello JON!'
   }
@@ -40,13 +42,6 @@
     .title {
         text-align: left;
         padding-left: 16px;
-    }
-
-    .message {
-        vertical-align: center;
-        text-align: center;
-        font-size: 20px;
-        color: #333333;
     }
 
     .drawer-header {
