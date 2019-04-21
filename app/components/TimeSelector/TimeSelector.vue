@@ -6,7 +6,7 @@
  import { Component, Vue } from "vue-property-decorator";
  @Component
  export default class TimeSelector extends Vue {
-  msg:string = 'HI THERE';
+  msg:string = 'Select Time';
  }
 </script>
 
