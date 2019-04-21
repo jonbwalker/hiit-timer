@@ -24,12 +24,10 @@
 </template>
 
 <script lang="ts">
-  export default {
-    data() {
-      return {
-        msg: 'Hello World!'
-      }
-    }
+  import { Component, Vue } from "vue-property-decorator";
+  @Component
+  export default class App extends Vue {
+    msg: string = 'Hello JON!'
   }
 </script>
 
