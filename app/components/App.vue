@@ -29,7 +29,12 @@
 
   @Component({components: {TimeSelector}})
   export default class App extends Vue {
-    msg: string = 'Hello JON!'
+    msg: string = 'Hello JON!';
+
+    get totalTime() {
+      return this.$store.state.totalTime;
+    }
+
   }
 </script>
 

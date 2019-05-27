@@ -16,11 +16,15 @@
   value: number = 0;
 
   increment() {
-    return this.value += 1;
+    this.value += 1;
+    this.$store.commit('incrementTotalTime');
   }
 
   decrement() {
-    if (this.value > 0) return this.value -= 1;
+    if (this.value > 0) {
+      this.value -= 1;
+      this.$store.commit('decrementTotalTime');
+    }
   }
  }
 </script>
