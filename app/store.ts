@@ -11,10 +11,9 @@ export default new Vuex.Store({
     incrementTotalTime(state) {
       state.totalTime += 1;
     },
-    decrementTotalTime(state, value) {
+    decrementTotalTime(state) {
       state.totalTime -= 1;
     }
-
   },
   actions: {
 
