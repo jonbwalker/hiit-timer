@@ -1,8 +1,7 @@
 import Vue from 'nativescript-vue';
 import App from './components/App.vue';
-import store from './store';
-
 import VueDevtools from 'nativescript-vue-devtools';
+import store from './store';
 
 if(TNS_ENV !== 'production') {
   Vue.use(VueDevtools);
@@ -14,9 +13,9 @@ Vue.config.silent = (TNS_ENV === 'production');
 Vue.registerElement(
   'RadSideDrawer',
   () => require('nativescript-ui-sidedrawer').RadSideDrawer
-)
+);
 
 new Vue({
-store,
+  store,
   render: h => h('frame', [h(App)])
 }).$start();
