@@ -16,9 +16,13 @@
                 <Label class="drawer-item" text="Item 3"/>
             </StackLayout>
 
-            <GridLayout ~mainContent columns="*" rows="*">
-                <TimeSelector />
-            </GridLayout>
+            <FlexboxLayout ~mainContent flexDirection="column">
+                <TimeSelector selector-label="Prep"/>
+                <StackLayout class="hr-light m-10"></StackLayout>
+                <TimeSelector selector-label="Work"/>
+                <StackLayout class="hr-light m-10"></StackLayout>
+                <Label :text="totalTime" />
+            </FlexboxLayout>
         </RadSideDrawer>
     </Page>
 </template>
