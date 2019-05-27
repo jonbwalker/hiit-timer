@@ -26,11 +26,23 @@
 </script>
 
 <style scoped>
- .message {
-   vertical-align: center;
-   text-align: center;
-   font-size: 20px;
-   color: #333333;
- }
+   .message {
+     text-align: center;
+     font-size: 20px;
+     color: #333333;
+   }
+   .round-btn {
+     width:40;
+     height:40;
+     color:white;
+     border-radius:100;
+     border-width:2;
+     border-color:gray;
+     background-color:gray;
+   }
+  .text-input {
+    width: 40;
+    height: 40;
+  }
 </style>
 
