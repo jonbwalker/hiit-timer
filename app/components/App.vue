@@ -1,9 +1,9 @@
 <template>
-    <Page>
-        <ActionBar>
+    <Page class="page">
+        <ActionBar class="action-bar">
             <GridLayout width="100%" columns="auto, *">
                 <Label text="MENU" @tap="$refs.drawer.nativeView.showDrawer()" col="0"/>
-                <Label class="title" text="Welcome to NativeScript-Vue!"  col="1"/>
+                <Label class="title" text="Welcome to NativeScript-Vue!" col="1"/>
             </GridLayout>
         </ActionBar>
 
@@ -43,11 +43,6 @@
 </script>
 
 <style scoped>
-    ActionBar {
-        background-color: #53ba82;
-        color: #ffffff;
-    }
-
     .title {
         text-align: left;
         padding-left: 16px;

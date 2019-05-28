@@ -44,6 +44,7 @@
      background-color:gray;
    }
   .text-input {
+    color:white;
     width: 40;
     height: 40;
   }
